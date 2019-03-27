@@ -1,0 +1,10 @@
+com\automationtest\pages\ExpensesPage.class
+com\automationtest\base\testbase.class
+com\automationtest\pages\ProjectRecordTypePage.class
+com\automation\stepDefinations\NewExpensesCreation.class
+com\automationtest\pages\LoginPage.class
+com\automation\runner\ExpensesRunnerTest.class
+com\automationtest\pages\HomePage.class
+com\automationtest\pages\CreateNewPage.class
+com\automationtest\pages\ExpenseEntryPage.class
+com\automationtest\pages\NewProjectEditPage.class

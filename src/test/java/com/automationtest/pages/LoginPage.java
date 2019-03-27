@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage extends testbase {
 
     // PageFactory
-    @FindBy(id= "username")
+    @FindBy(id = "username")
     WebElement UsernameField;
 
     @FindBy(xpath = "//input[@id='password']")
@@ -34,8 +34,8 @@ public class LoginPage extends testbase {
 
     public HomePage login() {
 
-            LogintoSandbox.click();
-            return new HomePage();
+        LogintoSandbox.click();
+        return new HomePage();
 
     }
 

@@ -7,19 +7,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProjectRecordTypePage extends testbase {
 
-    @FindBy(xpath ="//*[@class='mainTitle']")
+    @FindBy(xpath = "//*[@class='mainTitle']")
     WebElement VerifyPage;
 
     @FindBy(xpath = "//input[@value='Continue']")
     WebElement Continue;
 
 
-
-    public ProjectRecordTypePage () {
+    public ProjectRecordTypePage() {
         PageFactory.initElements(driver, this);
     }
 
-    public void VerifySelectProjectRecordTypePage(){
+    public void VerifySelectProjectRecordTypePage() {
         String expected = VerifyPage.getText().trim();
         System.out.println(expected);
         //String  actual  = "Select Project Record Type";
@@ -27,7 +26,7 @@ public class ProjectRecordTypePage extends testbase {
 
     }
 
-    public NewProjectEditPage ClickonContinueButton(){
+    public NewProjectEditPage ClickonContinueButton() {
         Continue.click();
         return new NewProjectEditPage();
 

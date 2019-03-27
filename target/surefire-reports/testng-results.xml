@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.automation.runner.ExpensesRunnerTest" duration-ms="36551" started-at="2019-03-21T16:03:16Z" finished-at="2019-03-21T16:03:52Z">
+    <groups>
+    </groups>
+    <test name="Command line test 99292b88-f242-4474-81de-0077a67f6efa" duration-ms="36551" started-at="2019-03-21T16:03:16Z" finished-at="2019-03-21T16:03:52Z">
+    </test> <!-- Command line test 99292b88-f242-4474-81de-0077a67f6efa -->
+  </suite> <!-- com.automation.runner.ExpensesRunnerTest -->
+</testng-results>

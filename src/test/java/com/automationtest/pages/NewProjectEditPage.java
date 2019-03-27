@@ -9,14 +9,14 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class NewProjectEditPage extends testbase {
-  String accountname = "ACA";
-  String projectname ="TEST123";
-  String region="UK";
-  String sector= "Air";
-  String projectfees ="2000";
-  String duraioninweeks="4";
-  String probability="50";
-  String salesLead = "Adam Walker";
+    String accountname = "ACA";
+    String projectname = "TEST123";
+    String region = "UK";
+    String sector = "Air";
+    String projectfees = "2000";
+    String duraioninweeks = "4";
+    String probability = "50";
+    String salesLead = "Adam Walker";
     @FindBy(xpath = "//*[@class='mainTitle']")
     WebElement VerifyPage;
 
@@ -36,7 +36,7 @@ public class NewProjectEditPage extends testbase {
     WebElement ProjectFees;
     @FindBy(xpath = "//*[@id='00N58000004jvNM']")
     WebElement StartDate;
-    @FindBy(xpath ="//*[contains(text(),'Today')]" )
+    @FindBy(xpath = "//*[contains(text(),'Today')]")
     WebElement DatePicker;
     @FindBy(xpath = "//*[@id='00N5800000DBEQj']")
     WebElement DurationInWeeks;
@@ -48,61 +48,65 @@ public class NewProjectEditPage extends testbase {
     WebElement SaveButton;
 
     public NewProjectEditPage() {
-        PageFactory.initElements(driver, this);}
+        PageFactory.initElements(driver, this);
+    }
 
-        public void EnterAccountName() {
+    public void EnterAccountName() {
 
-      AccountName.sendKeys(accountname);
-        }
+        AccountName.sendKeys(accountname);
+    }
+
     public void EnterProjectName() {
-      ProjectName.sendKeys(projectname);
+        ProjectName.sendKeys(projectname);
 
     }
+
     public void SelectProjectType() throws InterruptedException {
-      ProjectType.click();
-      ProjectTypeDropdown.click();
-      Thread.sleep(2000);
+        ProjectType.click();
+        ProjectTypeDropdown.click();
+        Thread.sleep(2000);
 
-  }
+    }
 
-   public void EnterRegion(){
+    public void EnterRegion() {
 
         Region.sendKeys(region);
-   }
+    }
 
-   public void EnterSector(){
-      Sector.sendKeys(sector);
+    public void EnterSector() {
+        Sector.sendKeys(sector);
 
-   }
+    }
 
-   public void EnterProjectFees(){
-      ProjectFees.sendKeys(projectfees);
+    public void EnterProjectFees() {
+        ProjectFees.sendKeys(projectfees);
 
-   }
-   public void EnterStartDate()  {
-       DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-       LocalDate localDate = LocalDate.now();
-       StartDate.sendKeys(dtf.format(localDate));
-   }
+    }
 
-   public  void EnterDurtaionInWeeks(){
-           DurationInWeeks.sendKeys(duraioninweeks);
+    public void EnterStartDate() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        LocalDate localDate = LocalDate.now();
+        StartDate.sendKeys(dtf.format(localDate));
+    }
+
+    public void EnterDurtaionInWeeks() {
+        DurationInWeeks.sendKeys(duraioninweeks);
 
 
     }
 
-    public void EnterProbablity(){
+    public void EnterProbablity() {
         Probablity.sendKeys(probability);
     }
 
-    public void EnterSaleslead(){
+    public void EnterSaleslead() {
         SalesLead.sendKeys(salesLead);
 
     }
 
-    public void ClickonSave(){
+    public void ClickonSave() {
         SaveButton.click();
 
     }
 
-    }
+}

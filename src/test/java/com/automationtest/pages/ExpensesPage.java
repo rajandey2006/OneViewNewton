@@ -1,4 +1,5 @@
 package com.automationtest.pages;
+
 import com.automationtest.base.testbase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +11,6 @@ public class ExpensesPage extends testbase {
 
     @FindBy(xpath = "//a[@href='/a5A/e?retURL=%2Fhome%2Fhome.jsp']")
     WebElement SelectExpenseLabel;
-
 
 
     public ExpensesPage() {
