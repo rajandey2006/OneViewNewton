@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="723025c5-86d5-40fc-8f16-2bbb4444684b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -413,7 +413,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="console&#9;FILE&#9;jar://C:/Users/Purna.bonthala/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar!/bsh/Console.class&#10;configu&#9;FILE&#9;jar://C:/Users/Purna.bonthala/.m2/repository/org/mockito/mockito-all/2.0.2-beta/mockito-all-2.0.2-beta.jar!/org/mockito/configuration&#10;configuration&#9;PSI&#9;JAVA://javax.security.auth.login.Configuration&#10;configurati&#9;ACTION&#9;editRunConfigurations" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553701435218" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553702287151" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
