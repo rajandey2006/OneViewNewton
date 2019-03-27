@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="723025c5-86d5-40fc-8f16-2bbb4444684b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Expenses.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Project.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Project.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FFUATAutomation/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FFUATAutomationTest/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FFUATAutomation/testdata/ExcelDataConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FFUATAutomationTest/testdata/ExcelDataConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FFUATAutomation/testdata/PersonalInformationTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FFUATAutomationTest/testdata/PersonalInformationTestData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FFUATAutomation/util/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FFUATAutomationTest/util/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/runner/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/stepDefinations/NewExpensesCreation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/base/testbase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/base/testbase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/CreateNewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/CreateNewPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpensesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpensesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/NewProjectEditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/NewProjectEditPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ProjectRecordTypePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ProjectRecordTypePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FFUATAutomation/testdata/ExcelDataConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FFUATAutomation/util/TestUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/runner/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/stepDefinations/NewExpensesCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/stepDefinations/NewExpensesCreation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationtest/base/testbase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automationtest/base/testbase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/ExpenseEntryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/ExpenseEntryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/NewProjectEditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/NewProjectEditPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/ProjectRecordTypePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automationtest/pages/ProjectRecordTypePage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,14 +51,14 @@
         <counts>
           <entry key="dummy" value="57" />
           <entry key="feature" value="2937" />
-          <entry key="java" value="5877" />
+          <entry key="java" value="5910" />
           <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Cucumber" value="2937" />
-          <entry key="JAVA" value="5877" />
+          <entry key="JAVA" value="5910" />
           <entry key="PLAIN_TEXT" value="57" />
           <entry key="XML" value="10" />
         </counts>
@@ -98,8 +67,8 @@
         <counts>
           <entry key="class" value="22" />
           <entry key="exe" value="2" />
-          <entry key="feature" value="41" />
-          <entry key="java" value="90" />
+          <entry key="feature" value="42" />
+          <entry key="java" value="91" />
           <entry key="properties" value="3" />
           <entry key="xml" value="4" />
         </counts>
@@ -107,8 +76,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="22" />
-          <entry key="Cucumber" value="41" />
-          <entry key="JAVA" value="90" />
+          <entry key="Cucumber" value="42" />
+          <entry key="JAVA" value="91" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="4" />
@@ -121,11 +90,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="198" selection-start-line="198" selection-end-line="198" />
+            <state relative-caret-position="379">
+              <caret line="212" selection-start-line="212" selection-end-line="212" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6873#6874#0" expanded="true" />
@@ -145,54 +114,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="195" selection-start-line="195" selection-end-line="195" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/WebDriverWait.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/FluentWait.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar!/com/google/common/base/Preconditions.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="321" selection-start-line="321" selection-end-line="321" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar!/org/openqa/selenium/support/ui/SystemClock.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/stepDefinations/NewExpensesCreation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1428">
               <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -201,11 +125,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpensesPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Features/Expenses/Expenses_PA.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="37" selection-start-line="9" selection-start-column="28" selection-end-line="10" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Features/Expenses/Expenses_AttachmentReceipt.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -265,9 +207,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/automationtest/pages/UserDetailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/runner/ExpensesRunnerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/runner/PA_ExpensesRunnerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/automation/stepDefinations/NewExpensesCreation.java" />
         <option value="$PROJECT_DIR$/Features/Expenses/Expenses_PA.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java" />
       </list>
     </option>
   </component>
@@ -377,6 +319,15 @@
               <item name="Oneview_Upgrade" type="b2602c69:ProjectViewProjectNode" />
               <item name="Oneview_Upgrade" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="FFUATAutomationTest" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Oneview_Upgrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Oneview_Upgrade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,7 +413,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="console&#9;FILE&#9;jar://C:/Users/Purna.bonthala/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar!/bsh/Console.class&#10;configu&#9;FILE&#9;jar://C:/Users/Purna.bonthala/.m2/repository/org/mockito/mockito-all/2.0.2-beta/mockito-all-2.0.2-beta.jar!/org/mockito/configuration&#10;configuration&#9;PSI&#9;JAVA://javax.security.auth.login.Configuration&#10;configurati&#9;ACTION&#9;editRunConfigurations" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553696459235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553701435218" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -611,9 +562,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.75147927" visible="true" weight="0.29001075" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.75147927" visible="true" weight="0.29001075" />
       <window_info id="Structure" order="1" sideWeight="0.50083196" side_tool="true" weight="0.24274974" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -623,13 +573,13 @@
       <window_info id="Favorites" order="7" sideWeight="0.24852072" side_tool="true" weight="0.2931258" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.36231884" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19175027" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6610925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32998884" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.0" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32775453" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32664436" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3154961" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -758,13 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpensesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -959,32 +902,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/stepDefinations/NewExpensesCreation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5-sources.jar!/cucumber/runtime/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6873#6874#0" expanded="true" />
-            <element signature="e#6918#6919#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,6 +920,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="37" selection-start-line="9" selection-start-column="28" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Features/Expenses/Expenses_AttachmentReceipt.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automation/stepDefinations/NewExpensesCreation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpensesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/automationtest/pages/ExpenseEntryPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="212" selection-start-line="212" selection-end-line="212" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6873#6874#0" expanded="true" />
+            <element signature="e#6918#6919#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

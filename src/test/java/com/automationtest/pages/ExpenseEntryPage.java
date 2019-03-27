@@ -208,6 +208,11 @@ public class ExpenseEntryPage<check> extends testbase {
 
         }
 
+        public void AttachReciept(){
+
+
+        }
+
         public void SelectExpense () {
             WebElement Checkbox = ProjectCheckbox;
             Checkbox.click();
