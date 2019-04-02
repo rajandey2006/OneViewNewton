@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "Features",
-        tags = {"@PAexpenseCreation"},
+        tags = {"@AttachmentReceipt"},
         format={"json:target/cucumber.json","html:target/site/cucumber-pretty"},
         glue = {"com/automation/stepDefinations"},
         monochrome = true,

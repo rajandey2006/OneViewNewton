@@ -78,7 +78,8 @@ public class NewExpensesCreation extends testbase {
             expenseEntryPage.SelectTaxType(data.get("TaxType"));
             expenseEntryPage.ClickonSaveAllButton();
             expenseEntryPage.VerifyExpensesSavedMessage();
-            expenseEntryPage.SelectLostReceiptCheckbox();
+            //expenseEntryPage.SelectLostReceiptCheckbox();
+            expenseEntryPage.AttachReciept();
             expenseEntryPage.SelectExpense();
             expenseEntryPage.ClickonSubmitButton();
             expenseEntryPage.VerifyExpensesSubmitMessage();
@@ -123,6 +124,10 @@ public class NewExpensesCreation extends testbase {
         expenseEntryPage.ResourceName();
 
 
+
+    }
+    @Then("^user attach the expense reciept$")
+    public void user_attach_the_expense_reciept() throws Throwable {
 
     }
 

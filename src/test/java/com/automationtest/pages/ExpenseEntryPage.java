@@ -68,6 +68,15 @@ public class ExpenseEntryPage<check> extends testbase {
     @FindBy(xpath = "//a[@href='#' and @class='YUIFakeSelectorClassForResourceSelection']")
     WebElement PAResource;
 
+    @FindBy(xpath = "//img[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:attachinfoImage']")
+    WebElement Attachment;
+
+    @FindBy(xpath = "//input[@class='__web-inspector-hide-shortcut__']")
+    WebElement ChooseFileButton;
+
+    @FindBy(xpath = "//input[@name='j_id0:attachmentForm:attachBlock:j_id32:j_id33' and @class='btn']")
+    WebElement AttachFileButton;
+
 
     public ExpenseEntryPage() {
         PageFactory.initElements(driver, this);
@@ -106,9 +115,9 @@ public class ExpenseEntryPage<check> extends testbase {
 
     public void ClickonAddNewRows() throws InterruptedException {
 
-        for (int i = 0; i <1; i++) {
+        for (int i = 0; i < 1; i++) {
             WebElement element = AddNewRows;
-           // JavascriptExecutor js = (JavascriptExecutor)driver;
+            // JavascriptExecutor js = (JavascriptExecutor)driver;
             //js.executeScript("arguments[0].click();", AddNewRows);
 
             Actions actions = new Actions(driver);
@@ -118,100 +127,133 @@ public class ExpenseEntryPage<check> extends testbase {
         }
     }
 
-        public void ClickonSelectProjecLookup () throws InterruptedException {
+    public void ClickonSelectProjecLookup() throws InterruptedException {
 
-           Thread.sleep(3000);
-            WebElement element = selectProjectLookUp;
-            if (element.isDisplayed() && element.isEnabled()) {
-                element.click();
-            }
-
-
-            Thread.sleep(3000);
-
-
+        Thread.sleep(3000);
+        WebElement element = selectProjectLookUp;
+        if (element.isDisplayed() && element.isEnabled()) {
+            element.click();
         }
 
-        public void ProjectSearchfield (String Project) {
-            searchField.clear();
-            searchField.sendKeys(Project);
-            searchField.sendKeys(Keys.ENTER);
 
-
-        }
-
-        public void Selectproject() throws InterruptedException  {
         Thread.sleep(3000);
 
-            int ok_size=driver.findElements(By.xpath("//a[@class='YUIFakeSelectorClassForResourceSelection']")).size();
 
-            driver.findElements(By.xpath("//a[@class='YUIFakeSelectorClassForResourceSelection']")).get(ok_size-1).click();
+    }
+
+    public void ProjectSearchfield(String Project) {
+        searchField.clear();
+        searchField.sendKeys(Project);
+        searchField.sendKeys(Keys.ENTER);
 
 
+    }
+
+    public void Selectproject() throws InterruptedException {
+        Thread.sleep(3000);
+
+        int ok_size = driver.findElements(By.xpath("//a[@class='YUIFakeSelectorClassForResourceSelection']")).size();
+
+        driver.findElements(By.xpath("//a[@class='YUIFakeSelectorClassForResourceSelection']")).get(ok_size - 1).click();
+
+
+    }
+
+    public void ClickonDatefield() {
+        DateField.click();
+    }
+
+    public void SelectDate() {
+        DatePicker.click();
+
+    }
+
+    public void SelectExpenseType(String ExpenseType) {
+        Select type = new Select(Type);
+        type.selectByVisibleText(ExpenseType);
+    }
+
+    public void WriteDescription(String Description) {
+        DescriptionBox.sendKeys(Description);
+    }
+
+    public void WriteTotalAmount(String TotalAmount) throws InterruptedException {
+        Thread.sleep(2000);
+        TotalAmountBox.sendKeys(TotalAmount);
+
+    }
+
+    public void SelectCurrency(String Currency) {
+        Select currency = new Select(CurrencyDropdown);
+        currency.selectByVisibleText(Currency);
+    }
+
+    public void SelectTaxType(String TaxType) {
+        Select taxtype = new Select(TaxTypeDropdown);
+        taxtype.selectByVisibleText(TaxType);
+    }
+
+    public void ClickonSaveAllButton() {
+        SaveAllButton.click();
+    }
+
+    public void VerifyExpensesSavedMessage() throws InterruptedException {
+        Thread.sleep(8000);
+
+
+        String actual = ExpensesSavedMessage.getText();
+        System.out.println(actual);
+        String expected = "1 Expense(s) are saved";
+        // Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual.contains("1 Expense(s)"));
+
+    }
+
+    public void SelectLostReceiptCheckbox() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOf(LostReceiptCheckbox)).click();
+
+        //LostReceiptCheckbox.click();
+
+    }
+
+    public void AttachReciept() throws InterruptedException {
+
+
+        String workingDir = System.getProperty("user.dir");
+        String filepath = workingDir + "/Reciepts/Expense.jpg";
+
+
+
+        WebElement fileInput = driver.findElement(By.name("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField:inputFile:file"));
+        fileInput.sendKeys(filepath);
+        // Added a wait to make you notice the difference.
+        Thread.sleep(1000);
+
+        driver.findElement(By.id("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField:inputFile:file")).sendKeys(
+                "C:\\Users\\Purna.bonthala\\Desktop\\Test Data\\Reciepts\\Expense.jpg");
+
+
+
+        // Added sleep to make you see the difference.uploadfile
+        Thread.sleep(1000);
+        //JUST A COMMENT
+
+        fileInput.sendKeys(filepath);
+
+
+
+
+
+
+
+
+            AttachFileButton.click();
         }
 
-        public void ClickonDatefield () {
-            DateField.click();
-        }
-
-        public void SelectDate () {
-            DatePicker.click();
-
-        }
-
-        public void SelectExpenseType (String ExpenseType) {
-            Select type = new Select(Type);
-            type.selectByVisibleText(ExpenseType);
-        }
-
-        public void WriteDescription (String Description) {
-            DescriptionBox.sendKeys(Description);
-        }
-
-        public void WriteTotalAmount (String TotalAmount ) throws InterruptedException {
-            Thread.sleep(2000);
-            TotalAmountBox.sendKeys(TotalAmount);
-
-        }
-
-        public void SelectCurrency (String Currency) {
-            Select currency = new Select(CurrencyDropdown);
-            currency.selectByVisibleText(Currency);
-        }
-
-        public void SelectTaxType (String TaxType) {
-            Select taxtype = new Select(TaxTypeDropdown);
-            taxtype.selectByVisibleText(TaxType);
-        }
-
-        public void ClickonSaveAllButton () {
-            SaveAllButton.click();
-        }
-
-        public void VerifyExpensesSavedMessage () throws InterruptedException {
-            Thread.sleep(8000);
 
 
-            String actual = ExpensesSavedMessage.getText();
-            System.out.println(actual);
-            String expected = "1 Expense(s) are saved";
-            // Assert.assertEquals(actual, expected);
-            Assert.assertTrue(actual.contains("1 Expense(s)"));
 
-        }
-
-        public void SelectLostReceiptCheckbox () {
-            WebDriverWait wait = new WebDriverWait(driver, 30);
-            wait.until(ExpectedConditions.visibilityOf(LostReceiptCheckbox)).click();
-
-            //LostReceiptCheckbox.click();
-
-        }
-
-        public void AttachReciept(){
-
-
-        }
 
         public void SelectExpense () {
             WebElement Checkbox = ProjectCheckbox;
@@ -248,6 +290,8 @@ public class ExpenseEntryPage<check> extends testbase {
 
 
         }
+
+
 
     }
 
