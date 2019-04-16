@@ -77,6 +77,12 @@ public class ExpenseEntryPage<check> extends testbase {
     @FindBy(xpath = "//input[@name='j_id0:attachmentForm:attachBlock:j_id32:j_id33' and @class='btn']")
     WebElement AttachFileButton;
 
+    @FindBy(xpath = "//input[@name='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:distText']" )
+    WebElement distance;
+
+    @FindBy(xpath = "//select[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:unitField']" )
+    WebElement unit;
+
 
     public ExpenseEntryPage() {
         PageFactory.initElements(driver, this);
@@ -141,9 +147,10 @@ public class ExpenseEntryPage<check> extends testbase {
 
     }
 
-    public void ProjectSearchfield(String Project) {
+    public void ProjectSearchfield(String Project) throws InterruptedException {
         searchField.clear();
         searchField.sendKeys(Project);
+        Thread.sleep(2000);
         searchField.sendKeys(Keys.ENTER);
 
 
@@ -168,18 +175,35 @@ public class ExpenseEntryPage<check> extends testbase {
 
     }
 
-    public void SelectExpenseType(String ExpenseType) {
+    public void SelectExpenseType(String ExpenseType) throws InterruptedException {
         Select type = new Select(Type);
         type.selectByVisibleText(ExpenseType);
+
+
+
     }
 
     public void WriteDescription(String Description) {
+
         DescriptionBox.sendKeys(Description);
+
     }
 
     public void WriteTotalAmount(String TotalAmount) throws InterruptedException {
         Thread.sleep(2000);
         TotalAmountBox.sendKeys(TotalAmount);
+
+    }
+    public  void EnterDistance(String Distance) {
+
+
+        distance.sendKeys(Distance);
+
+    }
+
+    public void SelectUnit(String Unit){
+        Select select = new Select(unit);
+        select.selectByVisibleText(Unit);
 
     }
 
@@ -225,19 +249,19 @@ public class ExpenseEntryPage<check> extends testbase {
 
 
 
-        WebElement fileInput = driver.findElement(By.name("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField:inputFile:file"));
+        WebElement fileInput = driver.findElement(By.name("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField"));
         fileInput.sendKeys(filepath);
         // Added a wait to make you notice the difference.
         Thread.sleep(1000);
 
-        driver.findElement(By.id("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField:inputFile:file")).sendKeys(
+        driver.findElement(By.id("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField")).sendKeys(
                 "C:\\Users\\Purna.bonthala\\Desktop\\Test Data\\Reciepts\\Expense.jpg");
 
 
 
         // Added sleep to make you see the difference.uploadfile
-        Thread.sleep(1000);
-        //JUST A COMMENT
+        Thread.sleep(4000);
+
 
         fileInput.sendKeys(filepath);
 
@@ -290,6 +314,8 @@ public class ExpenseEntryPage<check> extends testbase {
 
 
         }
+
+
 
 
 

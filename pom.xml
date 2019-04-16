@@ -117,6 +117,8 @@
                 <configuration>
                     <fork>true</fork>
                     <executable>C:\Program Files\Java\jdk1.8.0_202\bin\javac.exe</executable>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
             <plugin>

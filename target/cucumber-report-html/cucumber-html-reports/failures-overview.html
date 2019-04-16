@@ -77,7 +77,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>OneviewFFDEVcom</td>
                           <td>1</td>
-                        <td>21 Mar 2019, 16:03</td>
+                        <td>16 Apr 2019, 10:27</td>
           </tr>
         </tbody>
       </table>
@@ -102,7 +102,7 @@ $(document).ready(function() {
                       
 <div class="element">
       <div class="indention">
-      <a href="Expenses-Expenses-feature.html">View Feature</a> <i>Expenses</i>
+      <a href="Project-feature.html">View Feature</a> <i>Opportunity</i>
     </div>
   
   
@@ -114,7 +114,7 @@ $(document).ready(function() {
     
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Creating a new Expenses</span>
+  <span class="name">Creating a new Project</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -144,95 +144,11 @@ $(document).ready(function() {
   <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Given</span>
   <span class="name">user log in to FFUAT sandbox</span>
   
-  <span class="lead-duration duration">14s 244ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user clicks on createnew label</span>
-  
-  <span class="lead-duration duration">081ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user clicks "Expenses" from dropdown list</span>
-  
-  <span class="lead-duration duration">5s 141ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user move to "Expense Entry" Page</span>
-  
-  <span class="lead-duration duration">15s 879ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user complete the Expenses Entry</span>
-  
-  <span class="lead-duration duration">492ms</span>
+  <span class="lead-duration duration">16s 827ms</span>
 
   </div>
 
@@ -244,16 +160,17 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=72.0.3626.121)
+        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=73.0.3683.103)
   (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
 System info: host: 'PBONTHALA-001', ip: '192.168.39.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\PURNA~1.BON\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:60866}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 72.0.3626.121, webStorageEnabled: true}
-Session ID: fe8d23ec2845c429aa9245d19a64b92c
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\PURNA~1.BON\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49357}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 64717c6fd6dc6531d1f40af63e5d3fb1
+*** Element info: {Using=xpath, value=//span[@class='subMsg normalImportance'][2]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -266,320 +183,172 @@ Session ID: fe8d23ec2845c429aa9245d19a64b92c
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy14.click(Unknown Source)
-	at com.automationtest.pages.ExpenseEntryPage.ClickonSelectProjecLookup(ExpenseEntryPage.java:120)
-	at com.automation.stepDefinations.NewExpensesCreation.user_complete_the_Expenses_Entry(NewExpensesCreation.java:68)
-	at ✽.Then user complete the Expenses Entry(Expenses/Expenses.feature:9)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.getText(Unknown Source)
+	at com.automationtest.pages.HomePage.VerifyFFDEV(HomePage.java:31)
+	at com.automation.stepDefinations.CommonSteps.user_log_in_to_FFUAT_sandbox(CommonSteps.java:26)
+	at ✽.Given user log in to FFUAT sandbox(Project.feature:5)
 </pre>
       </div>
     </div>
   </div>
 
 
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user clicks on createnew label</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user clicks 'Project' from dropdown list</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user move to 'Select Project Record Type' Page</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on 'Continue' button</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user move to 'New project' Edit page</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user complete the new project details</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
                   <table class="step-arguments">
                           <tr>
-                                  <td>Project</td>
-                                  <td>Date</td>
-                                  <td>ExpenseType</td>
-                                  <td>Description</td>
-                                  <td>TotalAmount</td>
-                                  <td>Currency</td>
-                                  <td>TaxType</td>
+                                  <td>AccountName</td>
+                                  <td>ProjectName</td>
+                                  <td>ProjectType</td>
+                                  <td>Region</td>
+                                  <td>Sector</td>
+                                  <td>ProjectFees</td>
+                                  <td>StartDate</td>
+                                  <td>DurationInWeeks</td>
+                                  <td>Probability</td>
+                                  <td>SalesLead</td>
                               </tr>
                           <tr>
-                                  <td>ALS Air</td>
+                                  <td>ACA</td>
+                                  <td>New</td>
                                   <td></td>
-                                  <td>Accommodation</td>
-                                  <td>Test</td>
-                                  <td>100</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Newton Europe</td>
+                                  <td>UK</td>
+                                  <td>Air</td>
+                                  <td>10000</td>
                                   <td></td>
-                                  <td>Advertising</td>
-                                  <td>Test</td>
-                                  <td>200</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Cornwall Council</td>
-                                  <td></td>
-                                  <td>Client Entertainment</td>
-                                  <td>Test</td>
-                                  <td>300</td>
-                                  <td>Euro</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>University</td>
-                                  <td></td>
-                                  <td>Donations</td>
-                                  <td>Test</td>
-                                  <td>400</td>
-                                  <td>Canadian Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Newton Europe</td>
-                                  <td></td>
-                                  <td>Drinks</td>
-                                  <td>Test</td>
-                                  <td>500</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>BST Recruitment</td>
-                                  <td></td>
-                                  <td>Equipment Rental</td>
-                                  <td>Test</td>
-                                  <td>600</td>
-                                  <td>U.S. Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Hazlewood Foods</td>
-                                  <td></td>
-                                  <td>Fuel Receipts</td>
-                                  <td>Test</td>
-                                  <td>700</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>BAE Systems Surface</td>
-                                  <td></td>
-                                  <td>Gifts</td>
-                                  <td>Test</td>
-                                  <td>800</td>
-                                  <td>Euro</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Marks and Spencer plc</td>
-                                  <td></td>
-                                  <td>Hire Car Fuel</td>
-                                  <td>Test</td>
-                                  <td>900</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>NHS</td>
-                                  <td></td>
-                                  <td>IT equipment Purchased</td>
-                                  <td>Test</td>
-                                  <td>1000</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>ALS Land Campaign</td>
-                                  <td></td>
-                                  <td>IT Services contracts & support</td>
-                                  <td>Test</td>
-                                  <td>1234</td>
-                                  <td>Euro</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Birmingham City Council</td>
-                                  <td></td>
-                                  <td>IT Software</td>
-                                  <td>Test</td>
-                                  <td>4466</td>
-                                  <td>British Pound</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>BST</td>
-                                  <td></td>
-                                  <td>Meeting Room Hire</td>
-                                  <td>Test</td>
-                                  <td>3245</td>
-                                  <td>U.S. Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Swindon Borough Council</td>
-                                  <td></td>
-                                  <td>Miscellaneous other project Supplies</td>
-                                  <td>Test</td>
-                                  <td>454</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Transport for London</td>
-                                  <td></td>
-                                  <td>Office equipment Purchased</td>
-                                  <td>Test</td>
-                                  <td>1212</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>NEC LIMITED</td>
-                                  <td></td>
-                                  <td>Office Equipment repairs and Maintenance</td>
-                                  <td>Test</td>
-                                  <td>23232</td>
-                                  <td>Canadian Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Weetabix Limited</td>
-                                  <td></td>
-                                  <td>Other Sundry personal expenses</td>
-                                  <td>Test</td>
-                                  <td>1356</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Tulip Limited</td>
-                                  <td></td>
-                                  <td>Staff Entertainment</td>
-                                  <td>Test</td>
-                                  <td>2398</td>
-                                  <td>Euro</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>INTP</td>
-                                  <td></td>
-                                  <td>Subscriptions</td>
-                                  <td>Test</td>
-                                  <td>1359</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Poundland Limited</td>
-                                  <td></td>
-                                  <td>Telephone - internet</td>
-                                  <td>Test</td>
-                                  <td>1359</td>
-                                  <td>U.S. Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>NHS HCT</td>
-                                  <td></td>
-                                  <td>Telephone - landlines</td>
-                                  <td>Test</td>
-                                  <td>9766</td>
-                                  <td>Canadian Dollar</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Marks and Spencer plc</td>
-                                  <td></td>
-                                  <td>Telephone - mobile</td>
-                                  <td>Test</td>
-                                  <td>456</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>ALS Air</td>
-                                  <td></td>
-                                  <td>Travel - flights</td>
-                                  <td>Test</td>
-                                  <td>100</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Newton Europe</td>
-                                  <td></td>
-                                  <td>Travel - mileage</td>
-                                  <td>Test</td>
-                                  <td>200</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Cornwall Council</td>
-                                  <td></td>
-                                  <td>Travel - parking & tolls</td>
-                                  <td>Test</td>
-                                  <td>300</td>
-                                  <td>Euro</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>University</td>
-                                  <td></td>
-                                  <td>Travel - public transport</td>
-                                  <td>Test</td>
-                                  <td>400</td>
-                                  <td>Canadian Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Newton Europe</td>
-                                  <td></td>
-                                  <td>Travel - taxis</td>
-                                  <td>Test</td>
-                                  <td>500</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>BST Recruitment</td>
-                                  <td></td>
-                                  <td>Travel - vehicle hire</td>
-                                  <td>Test</td>
-                                  <td>600</td>
-                                  <td>U.S. Dollar</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Hazlewood Foods</td>
-                                  <td></td>
-                                  <td>Travel - vehicle repairs & servicing</td>
-                                  <td>Test</td>
-                                  <td>700</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>BAE Systems Surface</td>
-                                  <td></td>
-                                  <td>Other Subsistence Costs</td>
-                                  <td>Test</td>
-                                  <td>800</td>
-                                  <td>Euro</td>
-                                  <td>No VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>Marks and Spencer plc</td>
-                                  <td></td>
-                                  <td>Print stationery & Postage</td>
-                                  <td>Test</td>
-                                  <td>900</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
-                              </tr>
-                          <tr>
-                                  <td>NHS</td>
-                                  <td></td>
-                                  <td>Meals & Drinks</td>
-                                  <td>Test</td>
-                                  <td>1000</td>
-                                  <td>British Pound</td>
-                                  <td>VAT</td>
+                                  <td>4</td>
+                                  <td>50</td>
+                                  <td>Adam Walker</td>
                               </tr>
                       </table>
         
@@ -593,8 +362,8 @@ Session ID: fe8d23ec2845c429aa9245d19a64b92c
           <div class="step">
         
 <div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user clicks on "Save All" button</span>
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on 'Save' button</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -615,7 +384,7 @@ Session ID: fe8d23ec2845c429aa9245d19a64b92c
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">expenses saved message displays</span>
+  <span class="name">user navigate to "<Project Detail>" Page</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -636,7 +405,7 @@ Session ID: fe8d23ec2845c429aa9245d19a64b92c
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user submit the expense</span>
+  <span class="name">user move the OpportunityStage from stage five to stage four</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -657,7 +426,49 @@ Session ID: fe8d23ec2845c429aa9245d19a64b92c
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">expenses submited message displays</span>
+  <span class="name">user move the OpportunityStage from stage four to three</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief undefined">
+  <span class="keyword indention">Then</span>
+  <span class="name">user move the OpportunityStage fromstage three to two</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user move the OpportunityStage from stage two to stage live</span>
   
   <span class="lead-duration duration">000ms</span>
 

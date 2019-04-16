@@ -1,6 +1,7 @@
 package com.automationtest.base;
 
 import FFUATAutomationTest.util.TestUtil;
+import cucumber.api.Scenario;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,8 +16,10 @@ import java.util.concurrent.TimeUnit;
 
 public class testbase {
 
-    public static WebDriver driver;
+   public static WebDriver driver;
     public static Properties prop;
+   // public WebDriver driver;
+    public Scenario scenario;
 
     public testbase() {
 
@@ -33,6 +36,7 @@ public class testbase {
             e.printStackTrace();
         }
     }
+
 
     public static void intialization() {
         String browserName = prop.getProperty("browser");
@@ -51,6 +55,7 @@ public class testbase {
             driver = new FirefoxDriver();
 
         }
+        
 
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
@@ -58,5 +63,11 @@ public class testbase {
         driver.manage().timeouts().implicitlyWait(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
         // To navigate to the URL
         driver.get(prop.getProperty("url"));
+    }
+
+
+    public void cleanUp() {
+        driver.close();
+        driver.quit();
     }
 }

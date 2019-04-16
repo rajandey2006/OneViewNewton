@@ -9,7 +9,9 @@ import cucumber.api.java.en.Then;
 import java.util.Map;
 
 
-public class NewExpensesCreation extends testbase {
+public class NewExpensesCreationSteps extends testbase {
+
+
     LoginPage loginpage;
     HomePage homepage;
     CreateNewPage createnewpage;
@@ -19,21 +21,13 @@ public class NewExpensesCreation extends testbase {
     ExpenseEntryPage expenseEntryPage;
     UserDetailPage userdetailpage;
 
-    public NewExpensesCreation() {
+    public NewExpensesCreationSteps() {
+
         super();
     }
 
-    @Given("^user log in to FFUAT sandbox$")
-    public void user_log_in_to_FFUAT_sandbox() throws Throwable {
-        testbase.intialization();
-        loginpage = new LoginPage();
-        loginpage.EnterEmailAddress(prop.getProperty("Username"));
-        loginpage.EnterPassword(prop.getProperty("Password"));
-        loginpage.login();
-        homepage = new HomePage();
-        homepage.VerifyFFDEV();
 
-    }
+
 
     @Then("^user clicks on createnew label$")
     public void user_clicks_on_createnew_label() throws Throwable {
@@ -57,6 +51,7 @@ public class NewExpensesCreation extends testbase {
 
 
     }
+
     @Given("^user is on Expense Entry Page$")
     public void user_is_on_Expense_Entry_Page() throws Throwable {
         System.out.println("Expenses Entry page");
@@ -65,7 +60,7 @@ public class NewExpensesCreation extends testbase {
 
     @Then("^user complete the Expenses Entry$")
     public void user_complete_the_Expenses_Entry(DataTable ExpenseData) throws Throwable {
-        for (Map<String, String> data : ExpenseData.asMaps(String.class, String.class)) {
+        for (Map <String, String> data : ExpenseData.asMaps(String.class, String.class)) {
             expenseEntryPage.ClickonSelectProjecLookup();
             expenseEntryPage.ProjectSearchfield(data.get("Project"));
             expenseEntryPage.Selectproject();
@@ -78,17 +73,16 @@ public class NewExpensesCreation extends testbase {
             expenseEntryPage.SelectTaxType(data.get("TaxType"));
             expenseEntryPage.ClickonSaveAllButton();
             expenseEntryPage.VerifyExpensesSavedMessage();
-            //expenseEntryPage.SelectLostReceiptCheckbox();
-            expenseEntryPage.AttachReciept();
+            expenseEntryPage.SelectLostReceiptCheckbox();
+            //expenseEntryPage.AttachReciept();
             expenseEntryPage.SelectExpense();
             expenseEntryPage.ClickonSubmitButton();
             expenseEntryPage.VerifyExpensesSubmitMessage();
 
 
-
-
         }
     }
+
     @Then("^user clicks on \"([^\"]*)\" button$")
     public void user_clicks_on_button(String arg1) throws Throwable {
 
@@ -106,11 +100,12 @@ public class NewExpensesCreation extends testbase {
 
     }
 
-    @Then("^expenses submited message displays$")
-    public void expenses_submited_message_displays() throws Throwable {
+    @Then("^expenses submitted message displays$")
+    public void expenses_submitted_message_displays() throws Throwable {
 
 
     }
+
     @Given("^user switch to login as PA Profile user$")
     public void user_switch_to_login_as_PA_Profile_user() throws Throwable {
         homepage.LoginasPA();
@@ -124,8 +119,8 @@ public class NewExpensesCreation extends testbase {
         expenseEntryPage.ResourceName();
 
 
-
     }
+
     @Then("^user attach the expense reciept$")
     public void user_attach_the_expense_reciept() throws Throwable {
 
@@ -134,8 +129,6 @@ public class NewExpensesCreation extends testbase {
 
 
 
+        }
 
 
-
-
-}

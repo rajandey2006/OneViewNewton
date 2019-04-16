@@ -44,7 +44,7 @@ Feature: Expenses
 	Then user clicks on "Save All" button
 	Then expenses saved message displays
 	Then user submit the expense
-	Then expenses submited message displays
+	Then expenses submitted message displays
 
 
 

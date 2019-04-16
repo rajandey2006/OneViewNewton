@@ -1,31 +1,22 @@
 @NewProjectCreation
-Feature: FFDEV Project
-
+Feature: Opportunity
 
   Scenario: Creating a new Project
-    Given user log in to FFDEV sandbox
-    And User is on homepage
-    When user clicks on createnew label
-    And user clicks "Projectlable" from dropdown list
-    Then user navigate to "SelectProjectRecordType" Page
-    And user clicks on "Continue" button
-    Then user navigate to "NewProjectEdit" Page
-
-  Scenario:
-    And user bring up the "NewProjectEdit" Page
-    And user complete the form with
-      | AccountName     | accountname     |
-      | ProjectName     | projectname     |
-      | ProjectType     | projecttype     |
-      | Region          | region          |
-      | Sector          | sector          |
-      | ProjectFees     | projectfees     |
-      | StartDate       | startdate       |
-      | DurationInWeeks | durationinweeks |
-      | Probablity      | probablity      |
-      | SalesLead       | saleslead       |
-    And user clicks on "Save" button
-    Then user navigate to "<string>" Page
+	Given user log in to FFUAT sandbox
+	Then user clicks on createnew label
+	Then user clicks 'Project' from dropdown list
+	Then user move to 'Select Project Record Type' Page
+	And user clicks on 'Continue' button
+	Then user move to 'New project' Edit page
+	And user complete the new project details
+	  | AccountName | ProjectName | ProjectType | Region | Sector | ProjectFees | StartDate | DurationInWeeks | Probability | SalesLead   |
+	  | ACA         | New         |             | UK     | Air    | 10000       |           | 4               | 50          | Adam Walker |
+	And user clicks on 'Save' button
+	Then user navigate to "<Project Detail>" Page
+	Then user move the OpportunityStage from stage five to stage four
+	Then user move the OpportunityStage from stage four to three
+	Then user move the OpportunityStage fromstage three to two
+	Then user move the OpportunityStage from stage two to stage live
 
 
 
