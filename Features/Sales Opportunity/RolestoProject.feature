@@ -9,13 +9,23 @@ Feature: Opportunity
 	And user clicks on 'Continue' button
 	Then user move to 'New project' Edit page
 	And user complete the new project details
-	  | AccountName | ProjectName | ProjectType | Region | Sector | ProjectFees | StartDate | DurationInWeeks | Probability | SalesLead   |
-	  | ACA         | New         |             | UK     | Air    | 10000       |           | 4               | 50          | Adam Walker |
+	  | AccountName | ProjectName       | ProjectType | Region | Sector | ProjectFees | StartDate | DurationInWeeks | Probability | SalesLead   |
+	  | ACA         | AutomationProject |             | UK     | Air    | 10000       |           | 4               | 50          | Adam Walker |
 	And user clicks on 'Save' button
 	Then user navigate to "<Project Detail>" Page
 	Then user move the OpportunityStage from stage five to stage four
 	Then user move the OpportunityStage from stage four to three
 	Then user move the OpportunityStage from stage three to two
+	Then user switch to login as Scheduling Profile user
+	And search for projectName
+	Then user update the Resourcesrequest
+	And user complete the UpdateResourceRequestsform
+	And user verify the Succuess message
+	Then user Delete the project
+
+
+
+
 	
 
 

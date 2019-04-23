@@ -13,13 +13,19 @@ public class HomePage extends testbase {
     @FindBy(xpath = "//span[@class='subMsg normalImportance'][2]")
     WebElement FFUAT;
 
-    @FindBy(xpath = "//a[@id='setupLink']")
+    @FindBy(xpath = "//a[@id='setupLink' and @title='Setup']")
     WebElement Setup;
 
     @FindBy(xpath = "//input[@name='setupSearch']")
     WebElement QuickSearchfield;
     @FindBy(xpath = "//a[@class='nameURL uiOutputURL']")
-    WebElement ResourceName_ZoeBaker;
+    WebElement ResourceName;
+    @FindBy(xpath = "//input[@name='login' and @type='button']")
+    WebElement LoginButton;
+    @FindBy(xpath = "//input[@id='phSearchInput' and @name='str']")
+    WebElement Search;
+    @FindBy(xpath = "//*[@id='pse__Proj__c_body']/table/tbody/tr[2]/th/a")
+    WebElement AutomationProject;
 
 
     public HomePage() {
@@ -37,15 +43,35 @@ public class HomePage extends testbase {
     }
 
 
-    public CreateNewPage LoginasPA() {
+    public void LoginasPA() {
         Setup.click();
         QuickSearchfield.clear();
         QuickSearchfield.sendKeys("Zoe Baker");
         QuickSearchfield.sendKeys(Keys.ENTER);
-        ResourceName_ZoeBaker.click();
+        ResourceName.click();
 
-        return new CreateNewPage();
 
+    }
+
+    public void LoginasSchedulingAdmin() {
+        Setup.click();
+        QuickSearchfield.clear();
+        QuickSearchfield.sendKeys("Henry Kenyon");
+        QuickSearchfield.sendKeys(Keys.ENTER);
+        ResourceName.click();
+        LoginButton.click();
+
+    }
+
+    public void SearchProject() {
+        Search.sendKeys("AutomationProject");
+        Search.sendKeys(Keys.ENTER);
+
+    }
+
+    public void ClickonProjectName() {
+
+        AutomationProject.click();
     }
 
 

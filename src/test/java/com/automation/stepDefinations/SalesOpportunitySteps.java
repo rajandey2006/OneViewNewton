@@ -1,10 +1,7 @@
 package com.automation.stepDefinations;
 
 import com.automationtest.base.testbase;
-import com.automationtest.pages.CreateNewPage;
-import com.automationtest.pages.NewProjectEditPage;
-import com.automationtest.pages.ProjectDetailPage;
-import com.automationtest.pages.ProjectRecordTypePage;
+import com.automationtest.pages.*;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 
@@ -12,17 +9,26 @@ import java.util.Map;
 
 
 public class SalesOpportunitySteps extends testbase {
-
+    HomePage homePage;
     CreateNewPage createNewPage;
     ProjectRecordTypePage projectRecordTypePage;
     NewProjectEditPage newProjectEditPage;
     ProjectDetailPage projectDetailPage;
-
+    ResourceRequestsPage resourceRequestsPage;
+    UpdateResourceRequestsPage updateResourceRequestsPage;
 
 
     public SalesOpportunitySteps() {
 
-     super();
+        super();
+    }
+
+    @Then("^user switch to login as Scheduling Profile user$")
+    public void user_switch_to_login_as_Scheduling_Profile_user() throws Throwable {
+        homePage = new HomePage();
+        homePage.LoginasSchedulingAdmin();
+
+
     }
 
     @Then("^user clicks 'Project' from dropdown list$")
@@ -34,9 +40,8 @@ public class SalesOpportunitySteps extends testbase {
 
     @Then("^user move to 'Select Project Record Type' Page$")
     public void user_move_to_Select_Project_Record_Type_Page() throws Throwable {
-         projectRecordTypePage = new ProjectRecordTypePage();
-         projectRecordTypePage.VerifySelectProjectRecordTypePage();
-
+        projectRecordTypePage = new ProjectRecordTypePage();
+        projectRecordTypePage.VerifySelectProjectRecordTypePage();
 
 
     }
@@ -47,14 +52,13 @@ public class SalesOpportunitySteps extends testbase {
     }
 
 
-
     @Then("^user move to 'New project' Edit page$")
     public void user_move_to_New_project_Edit_page() throws Throwable {
-        newProjectEditPage=new NewProjectEditPage();
-
+        newProjectEditPage = new NewProjectEditPage();
 
 
     }
+
     @Then("^user complete the new project details$")
     public void user_complete_the_new_project_details(DataTable ProjectData) throws Throwable {
         for (Map <String, String> data : ProjectData.asMaps(String.class, String.class)) {
@@ -68,7 +72,6 @@ public class SalesOpportunitySteps extends testbase {
             newProjectEditPage.EnterDurtaionInWeeks(data.get("DurationInWeeks"));
             newProjectEditPage.EnterProbablity(data.get("Probability"));
             newProjectEditPage.EnterSaleslead(data.get("SalesLead"));
-
 
 
         }
@@ -87,9 +90,9 @@ public class SalesOpportunitySteps extends testbase {
 
     @Then("^user move the OpportunityStage from stage five to stage four$")
     public void user_move_the_Opportunitystage_from_stage_five_to_stage_four() throws Throwable {
-       projectDetailPage= new ProjectDetailPage();
-       projectDetailPage.ClickonEditbutton();
-       projectDetailPage.SelectOpportunityStage4();
+        projectDetailPage = new ProjectDetailPage();
+        projectDetailPage.ClickonEditbutton();
+        projectDetailPage.SelectOpportunityStage4();
 
 
     }
@@ -115,9 +118,53 @@ public class SalesOpportunitySteps extends testbase {
 
     }
 
+    @Then("^search for projectName$")
+    public void search_for_project() throws Throwable {
+
+        homePage.SearchProject();
+        homePage.ClickonProjectName();
+    }
+
+    @Then("^user update the Resourcesrequest$")
+    public void user_update_the_Resourcesrequest() throws Throwable {
+
+        projectDetailPage.ClickonUpdateResourceField();
+        resourceRequestsPage = new ResourceRequestsPage();
+        resourceRequestsPage.ClickonCreateResourceRequests();
+
+    }
+
+    @Then("^user complete the UpdateResourceRequestsform$")
+    public void user_complete_the_UpdateResourceRequestsform() throws Throwable {
+      updateResourceRequestsPage =new  UpdateResourceRequestsPage();
+
+        updateResourceRequestsPage.EnterRoleTitle();
+        updateResourceRequestsPage.SelectResourceRole();
+        updateResourceRequestsPage.EnterRequestedHours();
+        updateResourceRequestsPage.SelectStartDate();
+        updateResourceRequestsPage.SelectEndDate();
+        updateResourceRequestsPage.SelectStatus();
+        updateResourceRequestsPage.ClickonQuickUpdateSelectedResourceRequests();
+
+    }
+
+    @Then("^user verify the Succuess message$")
+    public void user_verify_the_Succuess_message() throws Throwable {
+        updateResourceRequestsPage.ClickonSaveUpdateResourceRequestsButton();
+    }
+
+    @Then("^user Delete the project$")
+    public void user_Delete_the_project() throws Throwable {
+        updateResourceRequestsPage.ClickonBacktoProjectButton();
+        updateResourceRequestsPage.DeletetheProject();
+
+    }
 
 
-        }
+
+}
+
+
 
 
 
