@@ -1,6 +1,6 @@
 package com.automationtest.pages;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class NewProjectEditPage extends testbase {
+public class NewProjectEditPage extends Testbase {
 
     @FindBy(xpath = "//*[@class='mainTitle']")
     WebElement VerifyPage;

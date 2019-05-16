@@ -1,6 +1,6 @@
 package com.automationtest.pages;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class UpdateResourceRequestsPage extends testbase {
+public class UpdateResourceRequestsPage extends Testbase {
     @FindBy(xpath = "//input[@id='j_id0:massUpdateRRForm:quickUpdRRPB:resourceSelectorPBS:quickUpdateTable:0:j_id86' and @type='text']")
     WebElement RoleTitleField;
     @FindBy(xpath = "//select[@id='j_id0:massUpdateRRForm:quickUpdRRPB:resourceSelectorPBS:quickUpdateTable:0:j_id88']")
@@ -83,11 +83,11 @@ public class UpdateResourceRequestsPage extends testbase {
 
     }
 
-    public void ClickonQuickUpdateSelectedResourceRequests(){
+    public void ClickonQuickUpdateSelectedResourceRequests() {
         QuickUpdateSelectedResourceRequests.click();
     }
 
-    public void ClickonSaveUpdateResourceRequestsButton(){
+    public void ClickonSaveUpdateResourceRequestsButton() {
 
         WebElement element = (SaveUpdateResourceRequests);
         Actions action = new Actions(driver);
@@ -96,17 +96,16 @@ public class UpdateResourceRequestsPage extends testbase {
 
     }
 
-    public void ClickonBacktoProjectButton(){
+    public void ClickonBacktoProjectButton() {
 
         WebElement element = BacktoProject;
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click()", element);
 
 
-
-
     }
-    public void DeletetheProject(){
+
+    public void DeletetheProject()  {
         DeleteProject.click();
         WebDriverWait wait = new WebDriverWait(driver, 3000);
         wait.until(ExpectedConditions.alertIsPresent());

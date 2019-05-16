@@ -15,7 +15,7 @@ Feature: Opportunity
 	Then user navigate to "<Project Detail>" Page
 	Then user move the OpportunityStage from stage five to stage four
 	Then user move the OpportunityStage from stage four to three
-	Then user move the OpportunityStage fromstage three to two
+	Then user move the OpportunityStage from stage three to two
 	Then user move the OpportunityStage from stage two to stage live
 
 

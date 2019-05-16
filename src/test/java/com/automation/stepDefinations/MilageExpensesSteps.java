@@ -1,6 +1,6 @@
 package com.automation.stepDefinations;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import com.automationtest.pages.ExpenseEntryPage;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
@@ -8,14 +8,14 @@ import cucumber.api.java.en.Then;
 import java.util.Map;
 
 
-public class MilageExpensesSteps extends testbase {
+public class MilageExpensesSteps extends Testbase {
 
     ExpenseEntryPage expenseEntryPage;
 
 
     public MilageExpensesSteps() {
 
-     super();
+        super();
     }
 
 
@@ -28,6 +28,7 @@ public class MilageExpensesSteps extends testbase {
             expenseEntryPage.Selectproject();
             expenseEntryPage.ClickonDatefield();
             expenseEntryPage.SelectDate();
+            expenseEntryPage.SelectExpenseType(data.get("Expense"));
             expenseEntryPage.SelectExpenseType(data.get("ExpenseType"));
             expenseEntryPage.WriteDescription(data.get("Description"));
             expenseEntryPage.EnterDistance(data.get("Distance"));
@@ -46,10 +47,8 @@ public class MilageExpensesSteps extends testbase {
         }
 
 
-
-
-        }
     }
+}
 
 
 

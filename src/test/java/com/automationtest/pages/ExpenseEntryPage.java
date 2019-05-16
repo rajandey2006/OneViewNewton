@@ -1,6 +1,6 @@
 package com.automationtest.pages;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -11,8 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-
-public class ExpenseEntryPage<check> extends testbase {
+public class ExpenseEntryPage<check> extends Testbase {
     @FindBy(xpath = "//input[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:expenseSelector' and @type='checkbox']")
     WebElement ProjectCheckbox;
 
@@ -39,7 +38,7 @@ public class ExpenseEntryPage<check> extends testbase {
     WebElement NonReimbursableCheckbox;
     @FindBy(xpath = "//textarea[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:descr']")
     WebElement DescriptionBox;
-    @FindBy(xpath = "//input[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:amountText']")
+    @FindBy(xpath = "//input[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:amountText' and @type='text']")
     WebElement TotalAmountBox;
     @FindBy(xpath = "//select[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:currencyISOCodeInput']")
     WebElement CurrencyDropdown;
@@ -77,10 +76,10 @@ public class ExpenseEntryPage<check> extends testbase {
     @FindBy(xpath = "//input[@name='j_id0:attachmentForm:attachBlock:j_id32:j_id33' and @class='btn']")
     WebElement AttachFileButton;
 
-    @FindBy(xpath = "//input[@name='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:distText']" )
+    @FindBy(xpath = "//input[@name='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:distText']")
     WebElement distance;
 
-    @FindBy(xpath = "//select[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:unitField']" )
+    @FindBy(xpath = "//select[@id='expPage:expEntryForm:itemsBlock:j_id84:tblRepeat:0:unitField']")
     WebElement unit;
 
 
@@ -180,7 +179,12 @@ public class ExpenseEntryPage<check> extends testbase {
         type.selectByVisibleText(ExpenseType);
 
 
+    }
 
+    public void SelectExpense(String Expense) throws InterruptedException {
+        Select type = new Select(Type);
+        type.selectByVisibleText(Expense);
+        Thread.sleep(2000);
     }
 
     public void WriteDescription(String Description) {
@@ -190,18 +194,19 @@ public class ExpenseEntryPage<check> extends testbase {
     }
 
     public void WriteTotalAmount(String TotalAmount) throws InterruptedException {
-        Thread.sleep(2000);
+        // Thread.sleep(2000);
         TotalAmountBox.sendKeys(TotalAmount);
 
     }
-    public  void EnterDistance(String Distance) {
+
+    public void EnterDistance(String Distance) {
 
 
         distance.sendKeys(Distance);
 
     }
 
-    public void SelectUnit(String Unit){
+    public void SelectUnit(String Unit) {
         Select select = new Select(unit);
         select.selectByVisibleText(Unit);
 
@@ -248,7 +253,6 @@ public class ExpenseEntryPage<check> extends testbase {
         String filepath = workingDir + "/Reciepts/Expense.jpg";
 
 
-
         WebElement fileInput = driver.findElement(By.name("j_id0:attachmentForm:attachBlock:j_id35:j_id36:fileField"));
         fileInput.sendKeys(filepath);
         // Added a wait to make you notice the difference.
@@ -258,7 +262,6 @@ public class ExpenseEntryPage<check> extends testbase {
                 "C:\\Users\\Purna.bonthala\\Desktop\\Test Data\\Reciepts\\Expense.jpg");
 
 
-
         // Added sleep to make you see the difference.uploadfile
         Thread.sleep(4000);
 
@@ -266,58 +269,46 @@ public class ExpenseEntryPage<check> extends testbase {
         fileInput.sendKeys(filepath);
 
 
+        AttachFileButton.click();
+    }
 
 
+    public void SelectExpense() {
+        WebElement Checkbox = ProjectCheckbox;
+        Checkbox.click();
+
+    }
+
+    public void ClickonSubmitButton() {
+
+        SubmitButton.click();
+    }
+
+    public void VerifyExpensesSubmitMessage() throws InterruptedException {
+        Thread.sleep(8000);
 
 
-
-
-            AttachFileButton.click();
-        }
-
-
-
-
-
-        public void SelectExpense () {
-            WebElement Checkbox = ProjectCheckbox;
-            Checkbox.click();
-
-        }
-
-        public void ClickonSubmitButton () {
-
-            SubmitButton.click();
-        }
-
-        public void VerifyExpensesSubmitMessage () throws InterruptedException {
-            Thread.sleep(8000);
-
-
-            String actual = ExpensesSubmitMessage.getText();
-            System.out.println(actual);
-            String expected = "1 Expense(s) are submitted";
-            // Assert.assertEquals(actual, expected);
-            Assert.assertTrue(actual.contains("1 Expense(s)"));
-            Thread.sleep(5000);
-
-
-        }
-
-        public void ResourceName() throws InterruptedException{
-            Resource.click();
-            Thread.sleep(2000);
-            ResourceLookup.clear();
-            ResourceLookup.sendKeys("Sophie Green");
-            ResourceLookup.sendKeys(Keys.ENTER);
-            PAResource.click();
-
-
-        }
-
-
-
+        String actual = ExpensesSubmitMessage.getText();
+        System.out.println(actual);
+        String expected = "1 Expense(s) are submitted";
+        // Assert.assertEquals(actual, expected);
+        Assert.assertTrue(actual.contains("1 Expense(s)"));
+        Thread.sleep(5000);
 
 
     }
+
+    public void ResourceName() throws InterruptedException {
+        Resource.click();
+        Thread.sleep(2000);
+        ResourceLookup.clear();
+        ResourceLookup.sendKeys("Sophie Green");
+        ResourceLookup.sendKeys(Keys.ENTER);
+        PAResource.click();
+
+
+    }
+
+
+}
 

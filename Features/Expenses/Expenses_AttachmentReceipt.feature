@@ -13,7 +13,7 @@ Feature: Expenses
 	Then expenses saved message displays
 	Then user attach the expense reciept
 	Then user submit the expense
-	Then expenses submited message displays
+	Then expenses submitted message displays
 
 
 

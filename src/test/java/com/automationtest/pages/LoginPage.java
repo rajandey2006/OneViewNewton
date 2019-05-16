@@ -1,11 +1,11 @@
 package com.automationtest.pages;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends testbase {
+public class LoginPage extends Testbase {
 
     // PageFactory
     @FindBy(id = "username")
@@ -16,8 +16,6 @@ public class LoginPage extends testbase {
 
     @FindBy(xpath = "//*[@id='Login']")
     WebElement LogintoSandbox;
-
-
 
 
     public LoginPage() {

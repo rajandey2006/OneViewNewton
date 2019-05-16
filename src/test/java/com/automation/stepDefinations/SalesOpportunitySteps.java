@@ -1,6 +1,6 @@
 package com.automation.stepDefinations;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import com.automationtest.pages.*;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
@@ -8,13 +8,12 @@ import cucumber.api.java.en.Then;
 import java.util.Map;
 
 
-public class SalesOpportunitySteps extends testbase {
+public class SalesOpportunitySteps extends Testbase {
     HomePage homePage;
     CreateNewPage createNewPage;
     ProjectRecordTypePage projectRecordTypePage;
     NewProjectEditPage newProjectEditPage;
     ProjectDetailPage projectDetailPage;
-    ResourceRequestsPage resourceRequestsPage;
     UpdateResourceRequestsPage updateResourceRequestsPage;
 
 
@@ -117,52 +116,26 @@ public class SalesOpportunitySteps extends testbase {
         projectDetailPage.SelectOpportunityStage1();
 
     }
-
     @Then("^search for projectName$")
     public void search_for_project() throws Throwable {
-
+        homePage = new HomePage();
         homePage.SearchProject();
         homePage.ClickonProjectName();
-    }
-
-    @Then("^user update the Resourcesrequest$")
-    public void user_update_the_Resourcesrequest() throws Throwable {
-
-        projectDetailPage.ClickonUpdateResourceField();
-        resourceRequestsPage = new ResourceRequestsPage();
-        resourceRequestsPage.ClickonCreateResourceRequests();
-
-    }
-
-    @Then("^user complete the UpdateResourceRequestsform$")
-    public void user_complete_the_UpdateResourceRequestsform() throws Throwable {
-      updateResourceRequestsPage =new  UpdateResourceRequestsPage();
-
-        updateResourceRequestsPage.EnterRoleTitle();
-        updateResourceRequestsPage.SelectResourceRole();
-        updateResourceRequestsPage.EnterRequestedHours();
-        updateResourceRequestsPage.SelectStartDate();
-        updateResourceRequestsPage.SelectEndDate();
-        updateResourceRequestsPage.SelectStatus();
-        updateResourceRequestsPage.ClickonQuickUpdateSelectedResourceRequests();
-
-    }
-
-    @Then("^user verify the Succuess message$")
-    public void user_verify_the_Succuess_message() throws Throwable {
-        updateResourceRequestsPage.ClickonSaveUpdateResourceRequestsButton();
+        updateResourceRequestsPage = new UpdateResourceRequestsPage();
+        //updateResourceRequestsPage.ClickonBacktoProjectButton();
     }
 
     @Then("^user Delete the project$")
     public void user_Delete_the_project() throws Throwable {
-        updateResourceRequestsPage.ClickonBacktoProjectButton();
+        Thread.sleep(2000);
         updateResourceRequestsPage.DeletetheProject();
 
     }
 
 
-
 }
+
+
 
 
 

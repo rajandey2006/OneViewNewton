@@ -1,11 +1,11 @@
 package com.automation.stepDefinations;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import com.automationtest.pages.HomePage;
 import com.automationtest.pages.LoginPage;
 import cucumber.api.java.en.Given;
 
-public class CommonSteps extends testbase {
+public class CommonSteps extends Testbase {
 
     LoginPage loginpage;
     HomePage homepage;
@@ -15,9 +15,10 @@ public class CommonSteps extends testbase {
 
         super();
     }
+
     @Given("^user log in to FFUAT sandbox$")
     public void user_log_in_to_FFUAT_sandbox() throws Throwable {
-        testbase.intialization();
+        Testbase.intialization();
         loginpage = new LoginPage();
         loginpage.EnterEmailAddress(prop.getProperty("Username"));
         loginpage.EnterPassword(prop.getProperty("Password"));
@@ -27,5 +28,5 @@ public class CommonSteps extends testbase {
 
 
     }
-    
+
 }

@@ -31,7 +31,6 @@ Feature: Expenses
 	  | NHS HCT                 |      | Telephone - landlines                    | Test        | 9766        | Canadian Dollar | No VAT  |
 	  | Marks and Spencer plc   |      | Telephone - mobile                       | Test        | 456         | British Pound   | VAT     |
 	  | ALS Air                 |      | Travel - flights                         | Test        | 100         | British Pound   | VAT     |
-	  | Newton Europe           |      | Travel - mileage                         | Test        | 200         | British Pound   | VAT     |
 	  | Cornwall Council        |      | Travel - parking & tolls                 | Test        | 300         | Euro            | No VAT  |
 	  | University              |      | Travel - public transport                | Test        | 400         | Canadian Dollar | VAT     |
 	  | Newton Europe           |      | Travel - taxis                           | Test        | 500         | British Pound   | VAT     |

@@ -2,34 +2,46 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="com.automation.runner.ProjectCreationRunnerTest" duration-ms="17229" started-at="2019-04-16T09:26:41Z" finished-at="2019-04-16T09:26:58Z">
+  <suite name="com.automation.runner.CustomerAccountCreationRunnerTest" duration-ms="25602" started-at="2019-05-07T16:23:40Z" finished-at="2019-05-07T16:24:06Z">
     <groups>
     </groups>
-    <test name="Command line test f1709e77-cc3f-4e4e-94a7-1a94c4a89def" duration-ms="17229" started-at="2019-04-16T09:26:41Z" finished-at="2019-04-16T09:26:58Z">
-    </test> <!-- Command line test f1709e77-cc3f-4e4e-94a7-1a94c4a89def -->
+    <test name="Command line test 8e84cbfc-c442-4182-824a-a46b131f1720" duration-ms="25602" started-at="2019-05-07T16:23:40Z" finished-at="2019-05-07T16:24:06Z">
+    </test> <!-- Command line test 8e84cbfc-c442-4182-824a-a46b131f1720 -->
+  </suite> <!-- com.automation.runner.CustomerAccountCreationRunnerTest -->
+  <suite name="com.automation.runner.ProjectCreationRunnerTest" duration-ms="67637" started-at="2019-05-07T16:25:35Z" finished-at="2019-05-07T16:26:42Z">
+    <groups>
+    </groups>
+    <test name="Command line test 650c8388-4967-47e1-8aa9-4a0ef3133c17" duration-ms="67637" started-at="2019-05-07T16:25:35Z" finished-at="2019-05-07T16:26:42Z">
+    </test> <!-- Command line test 650c8388-4967-47e1-8aa9-4a0ef3133c17 -->
   </suite> <!-- com.automation.runner.ProjectCreationRunnerTest -->
-  <suite name="com.automation.runner.AllocateRolestoProjectRunnerTest" duration-ms="75486" started-at="2019-04-16T09:23:59Z" finished-at="2019-04-16T09:25:14Z">
+  <suite name="com.automation.runner.AllocateRolestoProjectRunnerTest" duration-ms="70128" started-at="2019-05-07T16:22:30Z" finished-at="2019-05-07T16:23:40Z">
     <groups>
     </groups>
-    <test name="Command line test 88539496-027a-4a6e-b69b-f3239f8761ed" duration-ms="75486" started-at="2019-04-16T09:23:59Z" finished-at="2019-04-16T09:25:14Z">
-    </test> <!-- Command line test 88539496-027a-4a6e-b69b-f3239f8761ed -->
+    <test name="Command line test f7ac1574-f170-4af1-8ada-b0befd5a6bf0" duration-ms="70128" started-at="2019-05-07T16:22:30Z" finished-at="2019-05-07T16:23:40Z">
+    </test> <!-- Command line test f7ac1574-f170-4af1-8ada-b0befd5a6bf0 -->
   </suite> <!-- com.automation.runner.AllocateRolestoProjectRunnerTest -->
-  <suite name="com.automation.runner.PA_ExpensesRunnerTest" duration-ms="7286" started-at="2019-04-16T09:26:34Z" finished-at="2019-04-16T09:26:41Z">
+  <suite name="com.automation.runner.PA_ExpensesRunnerTest" duration-ms="13426" started-at="2019-05-07T16:25:21Z" finished-at="2019-05-07T16:25:35Z">
     <groups>
     </groups>
-    <test name="Command line test 6ff3e16b-ec70-4851-9b16-2031be0c17d4" duration-ms="7286" started-at="2019-04-16T09:26:34Z" finished-at="2019-04-16T09:26:41Z">
-    </test> <!-- Command line test 6ff3e16b-ec70-4851-9b16-2031be0c17d4 -->
+    <test name="Command line test 680f42e3-0fbe-4360-ba28-0f6950209a20" duration-ms="13426" started-at="2019-05-07T16:25:21Z" finished-at="2019-05-07T16:25:35Z">
+    </test> <!-- Command line test 680f42e3-0fbe-4360-ba28-0f6950209a20 -->
   </suite> <!-- com.automation.runner.PA_ExpensesRunnerTest -->
-  <suite name="com.automation.runner.ExpensesRunnerTest" duration-ms="70390" started-at="2019-04-16T09:25:14Z" finished-at="2019-04-16T09:26:25Z">
+  <suite name="com.automation.runner.ExpensesRunnerTest" duration-ms="61059" started-at="2019-05-07T16:24:06Z" finished-at="2019-05-07T16:25:07Z">
     <groups>
     </groups>
-    <test name="Command line test a7bd3870-f952-4168-bf40-c1cac26de0a4" duration-ms="70390" started-at="2019-04-16T09:25:14Z" finished-at="2019-04-16T09:26:25Z">
-    </test> <!-- Command line test a7bd3870-f952-4168-bf40-c1cac26de0a4 -->
+    <test name="Command line test 482448b6-5dc1-4250-b442-b959d8bcbc28" duration-ms="61059" started-at="2019-05-07T16:24:06Z" finished-at="2019-05-07T16:25:07Z">
+    </test> <!-- Command line test 482448b6-5dc1-4250-b442-b959d8bcbc28 -->
   </suite> <!-- com.automation.runner.ExpensesRunnerTest -->
-  <suite name="com.automation.runner.Mileage_ExpensesRunnerTest" duration-ms="8731" started-at="2019-04-16T09:26:25Z" finished-at="2019-04-16T09:26:33Z">
+  <suite name="com.automation.runner.Mileage_ExpensesRunnerTest" duration-ms="14311" started-at="2019-05-07T16:25:07Z" finished-at="2019-05-07T16:25:21Z">
     <groups>
     </groups>
-    <test name="Command line test 501087d0-daf8-44df-92e6-6be2f73f1593" duration-ms="8731" started-at="2019-04-16T09:26:25Z" finished-at="2019-04-16T09:26:33Z">
-    </test> <!-- Command line test 501087d0-daf8-44df-92e6-6be2f73f1593 -->
+    <test name="Command line test 2e0c4d29-ad64-4110-9199-5f90e2b12647" duration-ms="14311" started-at="2019-05-07T16:25:07Z" finished-at="2019-05-07T16:25:21Z">
+    </test> <!-- Command line test 2e0c4d29-ad64-4110-9199-5f90e2b12647 -->
   </suite> <!-- com.automation.runner.Mileage_ExpensesRunnerTest -->
+  <suite name="com.automation.runner.SupplierAccountCreationRunnerTest" duration-ms="21922" started-at="2019-05-07T16:26:42Z" finished-at="2019-05-07T16:27:04Z">
+    <groups>
+    </groups>
+    <test name="Command line test 9f05f115-d739-4da6-a713-ae3e1e6f0815" duration-ms="21922" started-at="2019-05-07T16:26:42Z" finished-at="2019-05-07T16:27:04Z">
+    </test> <!-- Command line test 9f05f115-d739-4da6-a713-ae3e1e6f0815 -->
+  </suite> <!-- com.automation.runner.SupplierAccountCreationRunnerTest -->
 </testng-results>

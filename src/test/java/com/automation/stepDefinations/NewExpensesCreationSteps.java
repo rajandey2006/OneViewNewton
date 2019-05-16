@@ -1,6 +1,6 @@
 package com.automation.stepDefinations;
 
-import com.automationtest.base.testbase;
+import com.automationtest.base.Testbase;
 import com.automationtest.pages.*;
 import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
@@ -9,7 +9,7 @@ import cucumber.api.java.en.Then;
 import java.util.Map;
 
 
-public class NewExpensesCreationSteps extends testbase {
+public class NewExpensesCreationSteps extends Testbase {
 
 
     LoginPage loginpage;
@@ -25,8 +25,6 @@ public class NewExpensesCreationSteps extends testbase {
 
         super();
     }
-
-
 
 
     @Then("^user clicks on createnew label$")
@@ -106,8 +104,9 @@ public class NewExpensesCreationSteps extends testbase {
 
     }
 
-    @Given("^user switch to login as PA Profile user$")
+    @Then("^user switch to login as PA Profile user$")
     public void user_switch_to_login_as_PA_Profile_user() throws Throwable {
+        homepage = new HomePage();
         homepage.LoginasPA();
         userdetailpage = new UserDetailPage();
         userdetailpage.LoginasPAprofileuser();
@@ -127,8 +126,6 @@ public class NewExpensesCreationSteps extends testbase {
     }
 
 
-
-
-        }
+}
 
 
