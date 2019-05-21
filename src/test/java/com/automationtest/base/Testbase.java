@@ -26,8 +26,7 @@ public class Testbase {
         try {
             prop = new Properties();
             FileInputStream ip = new FileInputStream(
-                    "C:/Users/Purna.bonthala/IdeaProjects/OneviewFFDEVcom/src/main/java/FFDEVAutomation/config/config.properties");
-
+                    "C:/Users/Purna.bonthala/IdeaProjects/Oneview_Upgrade/src/main/java/FFUATAutomationTest/config/configuration.properties");
             prop.load(ip);
 
         } catch (FileNotFoundException e) {

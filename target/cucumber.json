@@ -4,17 +4,16 @@
     "elements": [
       {
         "line": 4,
-        "name": "Creating a new Project",
+        "name": "Creating a new Expenses",
         "description": "",
-        "id": "opportunity;creating-a-new-project",
+        "id": "expenses;creating-a-new-expenses",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 13246455900,
-              "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat com.automationtest.pages.HomePage.VerifyFFDEV(HomePage.java:37)\r\n\tat com.automation.stepDefinations.CommonSteps.user_log_in_to_FFUAT_sandbox(CommonSteps.java:27)\r\n\tat ✽.Given user log in to FFUAT sandbox(Sales Opportunity/AddRolesfromProjectTemplate.feature:5)\r\n",
-              "status": "failed"
+              "duration": 17132568200,
+              "status": "passed"
             },
             "line": 5,
             "name": "user log in to FFUAT sandbox",
@@ -25,9 +24,22 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 9094992900,
+              "status": "passed"
             },
             "line": 6,
+            "name": "user switch to login as Businees Manager(Tom Elton) Profile user",
+            "match": {
+              "location": "BillingEventCreationSteps.user_switch_to_login_as_Businees_Manager_Tom_Elton_Profile_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 119638200,
+              "status": "passed"
+            },
+            "line": 7,
             "name": "user clicks on createnew label",
             "match": {
               "location": "NewExpensesCreationSteps.user_clicks_on_createnew_label()"
@@ -36,219 +48,226 @@
           },
           {
             "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user clicks \u0027Project\u0027 from dropdown list",
-            "match": {
-              "location": "SalesOpportunitySteps.user_clicks_Project_from_dropdown_list()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
+              "duration": 4477597400,
+              "status": "passed"
             },
             "line": 8,
-            "name": "user move to \u0027Select Project Record Type\u0027 Page",
+            "name": "user clicks \"Expenses\" from dropdown list",
             "match": {
-              "location": "SalesOpportunitySteps.user_move_to_Select_Project_Record_Type_Page()"
+              "arguments": [
+                {
+                  "val": "Expenses",
+                  "offset": 13
+                }
+              ],
+              "location": "NewExpensesCreationSteps.user_clicks_from_dropdown_list(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 7379401900,
+              "status": "passed"
             },
             "line": 9,
-            "name": "user clicks on \u0027Continue\u0027 button",
+            "name": "user move to \"Expense Entry\" Page",
             "match": {
-              "location": "SalesOpportunitySteps.user_clicks_on_Continue_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user move to \u0027New project\u0027 Edit page",
-            "match": {
-              "location": "SalesOpportunitySteps.user_move_to_New_project_Edit_page()"
+              "arguments": [
+                {
+                  "val": "Expense Entry",
+                  "offset": 14
+                }
+              ],
+              "location": "NewExpensesCreationSteps.user_move_to_Page(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 35912262700,
+              "status": "passed"
             },
-            "line": 11,
-            "name": "user complete the new project details",
+            "line": 10,
+            "name": "user complete the Expenses Entry",
             "match": {
-              "location": "SalesOpportunitySteps.user_complete_the_new_project_details(DataTable)"
+              "location": "NewExpensesCreationSteps.user_complete_the_Expenses_Entry(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "AccountName",
-                  "ProjectName",
-                  "ProjectType",
-                  "Region",
-                  "Sector",
-                  "ProjectFees",
-                  "StartDate",
-                  "DurationInWeeks",
-                  "Probability",
-                  "SalesLead"
+                  "Project",
+                  "Date",
+                  "ExpenseType",
+                  "Description",
+                  "TotalAmount",
+                  "Currency",
+                  "TaxType"
                 ],
-                "line": 12
+                "line": 11
               },
               {
                 "cells": [
-                  "ACA",
-                  "AutomationProject",
+                  "Weetabix Limited",
                   "",
-                  "UK",
-                  "Air",
-                  "10000",
-                  "",
-                  "4",
-                  "50",
-                  "Adam Walker"
+                  "Accommodation",
+                  "Test",
+                  "1234",
+                  "British Pound",
+                  "VAT"
                 ],
-                "line": 13
+                "line": 12
               }
             ],
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 57100,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "user clicks on \u0027Save\u0027 button",
-            "match": {
-              "location": "SalesOpportunitySteps.user_clicks_on_Save_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "user navigate to \"\u003cProject Detail\u003e\" Page",
+            "line": 13,
+            "name": "user clicks on \"Save All\" button",
             "match": {
               "arguments": [
                 {
-                  "val": "\u003cProject Detail\u003e",
-                  "offset": 18
+                  "val": "Save All",
+                  "offset": 16
                 }
               ],
-              "location": "SalesOpportunitySteps.user_navigate_to_Page(String)"
+              "location": "NewExpensesCreationSteps.user_clicks_on_button(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 26500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "expenses saved message displays",
+            "match": {
+              "location": "NewExpensesCreationSteps.expenses_saved_message_displays()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 32400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user submit the expense",
+            "match": {
+              "location": "NewExpensesCreationSteps.user_submit_the_expense()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48500,
+              "status": "passed"
             },
             "line": 16,
-            "name": "user move the OpportunityStage from stage five to stage four",
+            "name": "expenses submitted message displays",
             "match": {
-              "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_from_stage_five_to_stage_four()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 17,
-            "name": "user move the OpportunityStage from stage four to three",
-            "match": {
-              "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_from_stage_four_to_three()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "user move the OpportunityStage from stage three to two",
-            "match": {
-              "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_fromstage_three_to_two()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "user switch to login as Scheduling Profile user",
-            "match": {
-              "location": "SalesOpportunitySteps.user_switch_to_login_as_Scheduling_Profile_user()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "search for projectName",
-            "match": {
-              "location": "SalesOpportunitySteps.search_for_project()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "user add Resource Requests from Template",
-            "match": {
-              "location": "ResourceRequestsSteps.user_add_Resource_Requests_from_Template()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "user add the Template to the project",
-            "match": {
-              "location": "ResourceRequestsSteps.user_add_the_Template_to_the_project()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "name": "user Delete the project",
-            "match": {
-              "location": "SalesOpportunitySteps.user_Delete_the_project()"
+              "location": "NewExpensesCreationSteps.expenses_submitted_message_displays()"
             },
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "line": 18,
+        "name": "Expense Record Approval Process",
+        "description": "",
+        "id": "expenses;expense-record-approval-process",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6124402000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user switch to login as Finance Admin Profile user",
+            "match": {
+              "location": "BillingEventCreationSteps.user_switch_to_login_as_Finance_Admin_Profile_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4249077700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Finance Admin user complete the Audit approval process",
+            "match": {
+              "location": "BillingEventCreationSteps.finance_Admin_user_complete_the_Audit_approval_process()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user switch to login as Project Manager profile user",
+            "match": {
+              "location": "BillingEventCreationSteps.user_switch_to_login_as_Project_Manager_profile_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Project Manager profile user Approve the Expense record",
+            "match": {
+              "location": "BillingEventCreationSteps.project_Manager_profile_user_Approve_the_Expense_record()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user switch to login as Finanace Manager profile user",
+            "match": {
+              "location": "BillingEventCreationSteps.user_switch_to_login_as_Finanace_Manager_profile_user()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user Finance approve the Expense record",
+            "match": {
+              "location": "BillingEventCreationSteps.user_Finance_approve_the_Expense_record()"
+            },
+            "keyword": "And "
+          }
+        ]
       }
     ],
-    "name": "Opportunity",
+    "name": "Expenses",
     "description": "",
-    "id": "opportunity",
+    "id": "expenses",
     "keyword": "Feature",
-    "uri": "Sales Opportunity/AddRolesfromProjectTemplate.feature",
+    "uri": "Expenses/BillingEvent.feature",
     "tags": [
       {
         "line": 1,
-        "name": "@AddrolesfromTemplatetoProject"
+        "name": "@BillingEventCreation"
       }
     ]
   }

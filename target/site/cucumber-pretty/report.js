@@ -1,22 +1,22 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Sales Opportunity/AddRolesfromProjectTemplate.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Expenses/BillingEvent.feature");
 formatter.feature({
   "line": 2,
-  "name": "Opportunity",
+  "name": "Expenses",
   "description": "",
-  "id": "opportunity",
+  "id": "expenses",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@AddrolesfromTemplatetoProject"
+      "name": "@BillingEventCreation"
     }
   ]
 });
 formatter.scenario({
   "line": 4,
-  "name": "Creating a new Project",
+  "name": "Creating a new Expenses",
   "description": "",
-  "id": "opportunity;creating-a-new-project",
+  "id": "expenses;creating-a-new-expenses",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -27,224 +27,241 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "user clicks on createnew label",
+  "name": "user switch to login as Businees Manager(Tom Elton) Profile user",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
-  "name": "user clicks \u0027Project\u0027 from dropdown list",
+  "name": "user clicks on createnew label",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "user move to \u0027Select Project Record Type\u0027 Page",
+  "name": "user clicks \"Expenses\" from dropdown list",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "user clicks on \u0027Continue\u0027 button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "user move to \u0027New project\u0027 Edit page",
+  "name": "user move to \"Expense Entry\" Page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
-  "name": "user complete the new project details",
+  "line": 10,
+  "name": "user complete the Expenses Entry",
   "rows": [
     {
       "cells": [
-        "AccountName",
-        "ProjectName",
-        "ProjectType",
-        "Region",
-        "Sector",
-        "ProjectFees",
-        "StartDate",
-        "DurationInWeeks",
-        "Probability",
-        "SalesLead"
+        "Project",
+        "Date",
+        "ExpenseType",
+        "Description",
+        "TotalAmount",
+        "Currency",
+        "TaxType"
       ],
-      "line": 12
+      "line": 11
     },
     {
       "cells": [
-        "ACA",
-        "AutomationProject",
+        "Weetabix Limited",
         "",
-        "UK",
-        "Air",
-        "10000",
-        "",
-        "4",
-        "50",
-        "Adam Walker"
+        "Accommodation",
+        "Test",
+        "1234",
+        "British Pound",
+        "VAT"
       ],
-      "line": 13
+      "line": 12
     }
   ],
-  "keyword": "And "
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
+  "name": "user clicks on \"Save All\" button",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 14,
-  "name": "user clicks on \u0027Save\u0027 button",
-  "keyword": "And "
+  "name": "expenses saved message displays",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "user navigate to \"\u003cProject Detail\u003e\" Page",
+  "name": "user submit the expense",
   "keyword": "Then "
 });
 formatter.step({
   "line": 16,
-  "name": "user move the OpportunityStage from stage five to stage four",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "user move the OpportunityStage from stage four to three",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user move the OpportunityStage from stage three to two",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user switch to login as Scheduling Profile user",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "search for projectName",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "user add Resource Requests from Template",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
-  "name": "user add the Template to the project",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "user Delete the project",
+  "name": "expenses submitted message displays",
   "keyword": "Then "
 });
 formatter.match({
   "location": "CommonSteps.user_log_in_to_FFUAT_sandbox()"
 });
 formatter.result({
-  "duration": 13246455900,
-  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy14.getText(Unknown Source)\r\n\tat com.automationtest.pages.HomePage.VerifyFFDEV(HomePage.java:37)\r\n\tat com.automation.stepDefinations.CommonSteps.user_log_in_to_FFUAT_sandbox(CommonSteps.java:27)\r\n\tat ✽.Given user log in to FFUAT sandbox(Sales Opportunity/AddRolesfromProjectTemplate.feature:5)\r\n",
-  "status": "failed"
+  "duration": 17132568200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BillingEventCreationSteps.user_switch_to_login_as_Businees_Manager_Tom_Elton_Profile_user()"
+});
+formatter.result({
+  "duration": 9094992900,
+  "status": "passed"
 });
 formatter.match({
   "location": "NewExpensesCreationSteps.user_clicks_on_createnew_label()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_clicks_Project_from_dropdown_list()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_move_to_Select_Project_Record_Type_Page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_clicks_on_Continue_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_move_to_New_project_Edit_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_complete_the_new_project_details(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "SalesOpportunitySteps.user_clicks_on_Save_button()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 119638200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "\u003cProject Detail\u003e",
-      "offset": 18
+      "val": "Expenses",
+      "offset": 13
     }
   ],
-  "location": "SalesOpportunitySteps.user_navigate_to_Page(String)"
+  "location": "NewExpensesCreationSteps.user_clicks_from_dropdown_list(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4477597400,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_from_stage_five_to_stage_four()"
+  "arguments": [
+    {
+      "val": "Expense Entry",
+      "offset": 14
+    }
+  ],
+  "location": "NewExpensesCreationSteps.user_move_to_Page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7379401900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_from_stage_four_to_three()"
+  "location": "NewExpensesCreationSteps.user_complete_the_Expenses_Entry(DataTable)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 35912262700,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.user_move_the_Opportunitystage_fromstage_three_to_two()"
+  "arguments": [
+    {
+      "val": "Save All",
+      "offset": 16
+    }
+  ],
+  "location": "NewExpensesCreationSteps.user_clicks_on_button(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 57100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.user_switch_to_login_as_Scheduling_Profile_user()"
+  "location": "NewExpensesCreationSteps.expenses_saved_message_displays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 26500,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.search_for_project()"
+  "location": "NewExpensesCreationSteps.user_submit_the_expense()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 32400,
+  "status": "passed"
 });
 formatter.match({
-  "location": "ResourceRequestsSteps.user_add_Resource_Requests_from_Template()"
+  "location": "NewExpensesCreationSteps.expenses_submitted_message_displays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48500,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Expense Record Approval Process",
+  "description": "",
+  "id": "expenses;expense-record-approval-process",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 19,
+  "name": "user switch to login as Finance Admin Profile user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "Finance Admin user complete the Audit approval process",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "user switch to login as Project Manager profile user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "Project Manager profile user Approve the Expense record",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "user switch to login as Finanace Manager profile user",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "user Finance approve the Expense record",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "ResourceRequestsSteps.user_add_the_Template_to_the_project()"
+  "location": "BillingEventCreationSteps.user_switch_to_login_as_Finance_Admin_Profile_user()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6124402000,
+  "status": "passed"
 });
 formatter.match({
-  "location": "SalesOpportunitySteps.user_Delete_the_project()"
+  "location": "BillingEventCreationSteps.finance_Admin_user_complete_the_Audit_approval_process()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4249077700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BillingEventCreationSteps.user_switch_to_login_as_Project_Manager_profile_user()"
+});
+formatter.result({
+  "duration": 27700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BillingEventCreationSteps.project_Manager_profile_user_Approve_the_Expense_record()"
+});
+formatter.result({
+  "duration": 25600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BillingEventCreationSteps.user_switch_to_login_as_Finanace_Manager_profile_user()"
+});
+formatter.result({
+  "duration": 31900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BillingEventCreationSteps.user_Finance_approve_the_Expense_record()"
+});
+formatter.result({
+  "duration": 25700,
+  "status": "passed"
 });
 });
